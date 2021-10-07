@@ -67,7 +67,7 @@ namespace Code1st.Data
             new City {
                 CityName = "Burnaby",
                 Population = 213213,
-                ProvinceCode = context.Provinces.Find("ON").ProvinceCode,
+                ProvinceCode = context.Provinces.Find("BC").ProvinceCode,
             },
             new City {
                 CityName = "ThunderBay",
@@ -93,6 +93,36 @@ namespace Code1st.Data
                 CityName = "Cockrain",
                 Population = 21213,
                 ProvinceCode = context.Provinces.Find("AB").ProvinceCode,
+            },
+            new City {
+                CityName = "Red Deer",
+                Population = 233213,
+                ProvinceCode = context.Provinces.Find("AB").ProvinceCode,
+            },
+            new City {
+                CityName = "Edmonton",
+                Population = 233213,
+                ProvinceCode = context.Provinces.Find("AB").ProvinceCode,
+            },
+            new City {
+                CityName = "Brandon",
+                Population = 133213,
+                ProvinceCode = context.Provinces.Find("MB").ProvinceCode,
+            },
+            new City {
+                CityName = "Winkler",
+                Population = 1213,
+                ProvinceCode = context.Provinces.Find("MB").ProvinceCode,
+            },
+            new City {
+                CityName = "Kenora",
+                Population = 10000,
+                ProvinceCode = context.Provinces.Find("ON").ProvinceCode,
+            },
+            new City {
+                CityName = "Dryden",
+                Population = 10000,
+                ProvinceCode = context.Provinces.Find("ON").ProvinceCode,
             },
         };
 
