@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Code1st.Data;
 using Code1st.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace Code1st.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("APIPolicy")]
     public class CityApiController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

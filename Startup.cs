@@ -38,6 +38,11 @@ namespace Code1st
             .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
+            services.AddCors(o => o.AddPolicy("APIPolicy", builder => {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
         
         }
 
@@ -60,8 +65,11 @@ namespace Code1st
 
             app.UseRouting();
 
+            app.UseCors();
+
             app.UseAuthentication();
             app.UseAuthorization();
+
 
 
 
